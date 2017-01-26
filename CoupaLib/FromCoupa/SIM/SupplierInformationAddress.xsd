@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://CoupaLib/FromCoupa/SIM">
+	<xsd:complexType name="SupplierInformationAddress">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" name="RecordType" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Supplier_Information_ID" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Address_ID" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Address_Type" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Location_Code" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Address_Name" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Street_Address" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Street_Address_2" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Postal_Code" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="City" type="xsd:string"/>
+			<xsd:element minOccurs="0" name="State_or_Region" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Country" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="PO_Box" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="PO_Box_Postal_Code" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Account_Type" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Intermediary_Bank_Name" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Bank_Address" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Bank_City" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Bank_State_or_Region" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Bank_Postal_Code" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Bank_Country" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Bank_Work_Phone" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Bank_Fax_Phone" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Bank_Account_Name" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Bank_Account_Number" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Bank_Routing_Number" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="IBAN_Number" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Sort_Code" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="SWIFT_Code" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="BSB_Number" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="BIC" type="xsd:string"/>
+			<xsd:element minOccurs="0" name="BIC_Routing_Code" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Created_Date_and_Time" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Updated_Date_and_Time" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Payment_Method" type="xsd:string">
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

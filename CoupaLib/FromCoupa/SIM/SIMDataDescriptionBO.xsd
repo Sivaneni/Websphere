@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://CoupaLib/FromCoupa/SIM">
+	<xsd:complexType name="SIMDataDescriptionBO">
+		<xsd:sequence>
+			<xsd:element default="SupplierInformationHeader" minOccurs="0" name="Header" type="xsd:string">
+			</xsd:element>
+			<xsd:element default="SupplierInformationAddress" minOccurs="0" name="Address" type="xsd:string">
+			</xsd:element>
+			<xsd:element default="SupplierInformationContact" minOccurs="0" name="Contact" type="xsd:string">
+			</xsd:element>
+			<xsd:element default="SupplierInformationArtifact" minOccurs="0" name="Artifact" type="xsd:string">
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

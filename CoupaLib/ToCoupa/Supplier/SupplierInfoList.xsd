@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://CoupaLib/ToCoupa/Supplier"
+	xmlns:bons0="http://CoupaLib/ToCoupa/Supplier">
+	<xsd:include schemaLocation="Supplier.xsd"></xsd:include>
+	<xsd:complexType name="SupplierInfoList">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" name="supplierInfo"
+				type="bons0:Supplier" maxOccurs="unbounded">
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

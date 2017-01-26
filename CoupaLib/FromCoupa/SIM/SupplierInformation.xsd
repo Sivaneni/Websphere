@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://CoupaLib/FromCoupa/SIM" xmlns:bons0="http://CoupaLib/FromCoupa/SIM">
+    <xsd:include schemaLocation="SupplierInformationArtifact.xsd"/>
+    <xsd:include schemaLocation="SupplierInformationAddress.xsd"/>
+    <xsd:include schemaLocation="SupplierInformationContact.xsd"/>
+    <xsd:include schemaLocation="SupplierInformationHeader.xsd"/>
+    <xsd:complexType name="SupplierInformation">
+		<xsd:sequence>
+			<xsd:element maxOccurs="unbounded" minOccurs="0" name="Header" type="bons0:SupplierInformationHeader">
+			</xsd:element>
+			<xsd:element maxOccurs="unbounded" minOccurs="0" name="Address" type="bons0:SupplierInformationAddress">
+			</xsd:element>
+			<xsd:element maxOccurs="unbounded" minOccurs="0" name="Contact" type="bons0:SupplierInformationContact">
+			</xsd:element>
+			<xsd:element maxOccurs="unbounded" minOccurs="0" name="Artifact" type="bons0:SupplierInformationArtifact">
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+ServiceLibrary: true
+Class-Path: BaanLibV2.jar 
+ AwLib.jar
+Created-By: 1.5.0 (IBM Corporation)
+

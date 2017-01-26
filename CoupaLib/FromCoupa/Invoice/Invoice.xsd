@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://CoupaLib/ToCoupa/Invoice" xmlns:bons0="http://CoupaLib/ToCoupa/Invoice">
+    <xsd:include schemaLocation="InvoiceLineSplit.xsd"/>
+	<xsd:include schemaLocation="InvoiceLine.xsd"/>
+	<xsd:include schemaLocation="InvoiceHeader.xsd"/>
+	<xsd:complexType name="Invoice">
+		<xsd:sequence>
+			<xsd:element maxOccurs="unbounded" minOccurs="0" name="Header" type="bons0:InvoiceHeader">
+			</xsd:element>
+			<xsd:element maxOccurs="unbounded" minOccurs="0" name="Line" type="bons0:InvoiceLine">
+			</xsd:element>
+			<xsd:element maxOccurs="unbounded" minOccurs="0" name="LineSplit" type="bons0:InvoiceLineSplit">
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

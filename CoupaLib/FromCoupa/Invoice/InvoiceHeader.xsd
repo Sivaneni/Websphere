@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://CoupaLib/ToCoupa/Invoice" xmlns:bons0="http://CoupaLib/ToCoupa/Invoice">
+    <xsd:include schemaLocation="InvoiceLine.xsd"/>
+	<xsd:complexType name="InvoiceHeader">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" name="type" type="xsd:string"/>
+			<xsd:element minOccurs="0" name="id" type="xsd:string"/>
+			<xsd:element minOccurs="0" name="created-at" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="updated-at" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="status" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="internal-note" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="invoice-date" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="invoice-number" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="line-level-taxation" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="supplier-note" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="header-tax-amount" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="header-tax-rate" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="header-tax-code" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="paid" type="xsd:string"/>
+			<xsd:element minOccurs="0" name="payment-date" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="payment-notes" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="exported" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="account-type-id" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="account-type-name" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="payment-term" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="handling-amount" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="misc-amount" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="shipping-amount" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="total" type="xsd:string"/>
+			<xsd:element minOccurs="0" name="currency" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="accounting-total-amount" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="accounting-total-currency" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="supplier-id" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="supplier-name" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="supplier-number" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="created-by-email" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="created-by-employee-number" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="created-by-login" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="updated-by-email" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="updated-by-employee-number" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="updated-by-login" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="attachment-texts" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="comments" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="remit-to-address-code" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="remit-to-address-attention" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="remit-to-address-street1" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="remit-to-address-street2" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="remit-to-address-city" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="remit-to-address-state" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="remit-to-address-postal-code" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="remit-to-address-country-code" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="remit-to-address-name" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="custom-field-1" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="custom-field-2" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="custom-field-3" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="custom-field-4" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="custom-field-5" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="custom-field-6" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="custom-field-7" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="custom-field-8" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="custom-field-9" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="custom-field-10" type="xsd:string">
+			</xsd:element>
+			<xsd:element maxOccurs="unbounded" minOccurs="0" name="InvoiceLine" type="bons0:InvoiceLine">
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

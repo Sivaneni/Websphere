@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" name="ProjectTaskProcessIntf" targetNamespace="http://CoupaLib/ChartOfAccounts/ProjectTaskProcessIntf" xmlns:bons1="http://www.infor.com/boi_interface/AwPollProjectTasks" xmlns:bons2="http://AwLib" xmlns:tns="http://CoupaLib/ChartOfAccounts/ProjectTaskProcessIntf" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <wsdl:types>
+    <xsd:schema targetNamespace="http://CoupaLib/ChartOfAccounts/ProjectTaskProcessIntf">
+            <xsd:import namespace="http://www.infor.com/boi_interface/AwPollProjectTasks" schemaLocation="../com/infor/www/boi_interface/AwPollProjectTasks/com.boi.common.pollcoa.PollResultSetProjectTask.xsd"/>
+            <xsd:import namespace="http://AwLib" schemaLocation="../ApplicationProperties.xsd"/>
+      <xsd:element name="processProjectTask">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="eventId" nillable="true" type="xsd:string"/>
+            <xsd:element name="PollResultSetProjectTask" nillable="true" type="bons1:com.boi.common.pollcoa.PollResultSetProjectTask"/>
+                        <xsd:element name="applicationProps" nillable="true" type="bons2:ApplicationProperties"/>
+                        <xsd:element name="sourceSystem" nillable="true" type="xsd:string"/>
+                        <xsd:element name="targetSystem" nillable="true" type="xsd:string"/>
+                    </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+    <wsdl:message name="processProjectTaskRequestMsg">
+    <wsdl:part element="tns:processProjectTask" name="processProjectTaskParameters"/>
+  </wsdl:message>
+    <wsdl:portType name="ProjectTaskProcessIntf">
+    <wsdl:operation name="processProjectTask">
+            <wsdl:input message="tns:processProjectTaskRequestMsg" name="processProjectTaskRequest"/>
+        </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

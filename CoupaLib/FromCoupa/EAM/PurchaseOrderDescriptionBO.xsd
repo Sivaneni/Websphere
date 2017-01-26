@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://CoupaLib/FromCoupa/EAM">
+	<xsd:complexType name="PurchaseOrderDescriptionBO">
+		<xsd:sequence>
+			<xsd:element default="PurchaseOrderHeader" minOccurs="0"
+				name="Header" type="xsd:string">
+			</xsd:element>
+			<xsd:element default="PurchaseOrderLine" minOccurs="0"
+				name="Line" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="LineSplit"
+				type="xsd:string" default="PurchaseOrderLineSplit">
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

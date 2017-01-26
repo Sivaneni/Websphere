@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://CoupaLib/ToCoupa/Invoice">
+	<xsd:complexType name="InvoiceDataDescriptionBO">
+		<xsd:sequence>
+			<xsd:element default="InvoiceHeader" minOccurs="0" name="Header" type="xsd:string">
+			</xsd:element>
+			<xsd:element default="InvoiceLine" minOccurs="0" name="Line" type="xsd:string">
+			</xsd:element>
+			<xsd:element default="InvoiceLineSplit" minOccurs="0" name="LineSplit" type="xsd:string">
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

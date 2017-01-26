@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.ibm.com/xmlns/prod/websphere/j2ca/ftp/purchaseorderinfowrapper"
+	xmlns:bons0="http://CoupaLib/FromCoupa/EAM">
+	<xsd:import schemaLocation="FromCoupa/EAM/PurchaseOrderInfo.xsd"
+		namespace="http://CoupaLib/FromCoupa/EAM">
+	</xsd:import>
+
+	<xsd:annotation xml:space="preserve">
+<xsd:appinfo source="http://www.ibm.com/xmlns/prod/j2ca/versionCompatability">
+<info:resourceAdapter xmlns:info="http://www.ibm.com/xmlns/prod/j2ca/versionCompatability" version="7.5.0.5_IF03"/>
+</xsd:appinfo>
+</xsd:annotation>
+
+	<xsd:annotation xml:space="preserve">
+<xsd:appinfo source="commonj.connector.asi">
+<asi:annotationSet xmlns:asi="commonj.connector.asi" asiNSURI=""/>
+</xsd:appinfo>
+</xsd:annotation>
+	<xsd:complexType name="PurchaseOrderInfoWrapper">
+		<xsd:sequence maxOccurs="1" minOccurs="1">
+			<xsd:element maxOccurs="1" minOccurs="0"
+				name="DirectoryPath" nillable="true" type="xsd:string" />
+			<xsd:element maxOccurs="1" minOccurs="0" name="Filename"
+				nillable="true" type="xsd:string" />
+			<xsd:element maxOccurs="1" minOccurs="0"
+				name="TemporaryFilename" nillable="true" type="xsd:string" />
+			<xsd:element maxOccurs="1" minOccurs="0" name="ChunkInfo"
+				nillable="true" type="xsd:string" />
+			<xsd:element maxOccurs="1" minOccurs="0"
+				name="FtpServerHostName" nillable="true" type="xsd:string" />
+			<xsd:element maxOccurs="1" minOccurs="0"
+				name="FtpServerEventDirectory" nillable="true" type="xsd:string" />
+			<xsd:element maxOccurs="1" minOccurs="0"
+				name="DataConnectionMode" nillable="true" type="xsd:string" />
+			<xsd:element maxOccurs="1" minOccurs="0"
+				name="FileTransferType" nillable="true" type="xsd:string" />
+			<xsd:element maxOccurs="1" minOccurs="0"
+				name="DataProtectionLevel" nillable="true" type="xsd:string" />
+			<xsd:element maxOccurs="1" minOccurs="0"
+				name="SecondServerDirectory" nillable="true" type="xsd:string" />
+			<xsd:element maxOccurs="1" minOccurs="0"
+				name="SecondServerUsername" nillable="true" type="xsd:string" />
+			<xsd:element maxOccurs="1" minOccurs="0"
+				name="SecondServerPassword" nillable="true" type="xsd:string" />
+			<xsd:element maxOccurs="1" minOccurs="0"
+				name="FileContentEncoding" nillable="true" type="xsd:string" />
+			<xsd:element maxOccurs="1" minOccurs="0"
+				name="IncludeEndBODelimiter" nillable="true" type="xsd:string" />
+			<xsd:element maxOccurs="1" minOccurs="0"
+				name="ResumeFailedTransfer" nillable="true" type="xsd:boolean" />
+			<xsd:element maxOccurs="1" minOccurs="0"
+				name="FileInLocalDirectory" nillable="true" type="xsd:boolean" />
+			<xsd:element maxOccurs="1" minOccurs="0"
+				name="LocalDirectoryPath" nillable="true" type="xsd:string" />
+			<xsd:element maxOccurs="1" minOccurs="0"
+				name="LocalArchivingEnabledForCreate" nillable="true"
+				type="xsd:boolean" />
+			<xsd:element maxOccurs="1" minOccurs="0"
+				name="LocalArchiveDirForCreate" nillable="true" type="xsd:string" />
+			<xsd:element maxOccurs="1" minOccurs="0"
+				name="StagingDirectory" nillable="true" type="xsd:string" />
+			<xsd:element maxOccurs="1" minOccurs="0"
+				name="GenerateUniqueFile" nillable="true" type="xsd:boolean" />
+			<xsd:element maxOccurs="1" minOccurs="0"
+				name="UniqueFilePrefix" nillable="true" type="xsd:string" />
+			<xsd:element maxOccurs="1" minOccurs="0"
+				name="UniqueFileSuffix" nillable="true" type="xsd:string" />
+			<xsd:element maxOccurs="1" minOccurs="0"
+				name="CreateFileIfNotExists" nillable="true" type="xsd:boolean" />
+			<xsd:element maxOccurs="unbounded" minOccurs="0"
+				name="ScriptFileParameters" nillable="true" type="xsd:string" />
+			<xsd:element maxOccurs="1" minOccurs="0"
+				name="SplittingFunctionClassName" nillable="true" type="xsd:string" />
+			<xsd:element maxOccurs="1" minOccurs="0"
+				name="SplitCriteria" nillable="true" type="xsd:string" />
+			<xsd:element maxOccurs="1" minOccurs="0"
+				name="DeleteOnRetrieve" nillable="true" type="xsd:boolean" />
+			<xsd:element maxOccurs="1" minOccurs="0"
+				name="ArchiveDirectoryForRetrieve" nillable="true"
+				type="xsd:string" />
+			<xsd:element maxOccurs="1" minOccurs="0" name="Content"
+				nillable="true" type="bons0:PurchaseOrderInfo" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+</xsd:schema>

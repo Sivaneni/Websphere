@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://CoupaLib/FromCoupa/EAM">
+	<xsd:complexType name="PurchaseOrderLine">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" name="type" type="xsd:string" />
+			<xsd:element minOccurs="0" name="accounting-total"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="created-at"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="description"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="id" type="xsd:string" />
+			<xsd:element minOccurs="0" name="invoiced"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element default="Line Number" minOccurs="0"
+				name="Line_Number" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="need-by-date"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="order-header-id"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="price" type="xsd:string" />
+			<xsd:element minOccurs="0" name="quantity"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="received"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="source-part-num"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="status"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="sub-line-num"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="supp-aux-part-num"
+				type="xsd:string">
+			</xsd:element>
+
+			<xsd:element minOccurs="0" name="total" type="xsd:string" />
+			<xsd:element minOccurs="0" name="Line_type"
+				type="xsd:string" default="Line type" />
+			<xsd:element minOccurs="0" name="updated-at"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="version"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="account-code"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="segment-1"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="segment-2"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="segment-3"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="segment-4"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="segment-5"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="segment-6"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="segment-7"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="segment-8"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="segment-9"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="segment-10"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="segment-11"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="segment-12"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="segment-13"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="segment-14"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="segment-15"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="segment-16"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="segment-17"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="segment-18"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="segment-19"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="segment-20"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="account-name"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="account-type"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="accounting-total-currency"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="contract-id"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="contract-name"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="currency"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="department"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="created-by-email"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="created-by-employee-number"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="created-by-firstname"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="created-by-id"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="created-by-lastname"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="created-by-login"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="supplier-id"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="supplier-name"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="supplier-number"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="uom" type="xsd:string" />
+			<xsd:element minOccurs="0" name="updated-by-email"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="updated-by-employee-number"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="updated-by-firstname"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="updated-by-id"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="updated-by-lastname"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="updated-by-login"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="commodity"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element default="EAM Requisition Number" minOccurs="0"
+				name="EAM_Requisition_Number" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Comments"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="EAM_line_number"
+				type="xsd:string" default="EAM line number">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Tax" type="xsd:string" />
+			<xsd:element minOccurs="0" name="Taxable"
+				type="xsd:string">
+			</xsd:element>
+
+
+			<xsd:element minOccurs="0" name="custom-field-6"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="custom-field-7"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="custom-field-8"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="custom-field-9"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="custom-field-10"
+				type="xsd:string">
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

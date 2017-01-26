@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://CoupaLib/FromCoupa/SIM"
+	xmlns:bons1="http://CoupaLib/FromCoupa/SIM">
+	<xsd:include schemaLocation="SupplierInformationArtifact.xsd" />
+	<xsd:include schemaLocation="SupplierInformationAddress.xsd" />
+	<xsd:include schemaLocation="SupplierInformationContact.xsd" />
+	<xsd:complexType name="SupplierInformationHeader">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" name="RecordType"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="SIM_ID"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Supplier_ID"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Buyer_ID"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="SIM_Status"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Company_Name"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Display_Name"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Parent_Company_Name"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Industry"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Preferred_Currency"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Preferred_Language"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Inco_Terms"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Commodity"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Minority_Indicator"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Minority_Type"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Tax_Region"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Tax_Classification"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Federal_Tax_ID"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="SSN" type="xsd:string" />
+			<xsd:element minOccurs="0" name="DUNS" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Tax_Exempt_Explanation"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Income_Type"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Federal_Reportable"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="International_Tax_ID"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0"
+				name="International_Tax_Classification" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="International_Explanation"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Backend_System_Invoicing"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Backend_System_Catalog"
+				type="xsd:string">
+			</xsd:element>
+			<!-- <xsd:element minOccurs="0" name="Payment_Term"
+				type="xsd:string">
+			</xsd:element> -->
+			<xsd:element minOccurs="0" name="Supplier_Region"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0"
+				name="Govt_Agency_Interaction_Indicator" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Govt_Agency_Interaction"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Organization_Type"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Bribery_Policy_Indicator"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Bribery_Policy_Text"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Govt_Allegation_Indicator"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Govt_Allegation_Text"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0"
+				name="Third_Party_Interaction_Indicator" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0"
+				name="Third_Party_Interaction_Text" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Country_of_Operation"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Goods_or_Services_Provided"
+				type="xsd:string">
+			</xsd:element>
+			<!-- <xsd:element minOccurs="0" name="Pay_Group"
+				type="xsd:string">
+			</xsd:element> -->
+			<xsd:element minOccurs="0" name="Invoice_Amount_Limit"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Hold_Payment_Indicator"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Hold_Payment_Text"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Separate_Remit_To"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Comment_Source"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Comment"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Exported"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0"
+				name="Last_Exported_Date_and_Time" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Created_Date_and_Time"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Created-By_id"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0"
+				name="Created-By_Lastname_Firstname" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Created-By_email"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Updated_Date_and_Time"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Updated-By_id"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0"
+				name="Updated-By_Lastname_Firstname" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Updated-By_email"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Logo_file_name"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Logo_content_type"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Logo_file_size"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Logo_updated_at"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Website"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Allow_cXML_Invoicing"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0"
+				name="Hold_Invoices_for_AP_Review" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Send_Invoices_to_Approvals"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0"
+				name="Allow_Invoicing_with_no_Backing_Doc_from_Connect"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0"
+				name="Allow_Invoicing_with_Unbacked_Lines_from_Connect"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Invoice_Matching_Level"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Shipping_Term"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Tax_Code"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Savings_Percentage"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0"
+				name="Allow_Invoicing_from_Connect" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0"
+				name="Allow_Choosing_Billing_Account_in_Invoicing"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Invoice_Inbound_Emails"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Default_Invoice_Email"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0"
+				name="Inbound_Invoice_Email_Domain" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Duplicate_Exists"
+				type="xsd:string">
+			</xsd:element>
+
+			<!-- <xsd:element minOccurs="0" name="payment-term"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="payment-term-internal"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="pay-group"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="payment-method"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="payment-method-internal"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Bank_Code"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="andersen-entity"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="eam-setup"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="street-address"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="street-address-2"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="postal-code"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="city" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="state-region"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="country"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0"
+				name="purchase-order-contact-email" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="accounting-contact-email"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="type-of-tax-id"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="foreign-nonus-entity"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="reason-for-payment"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="ach-format-code"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="remittance-document-type"
+				type="xsd:string">
+			</xsd:element>
+
+			<xsd:element minOccurs="0" name="commodity-type"
+				type="xsd:string">
+			</xsd:element> -->
+			
+			
+			
+			<xsd:element minOccurs="0" name="Payment_Term"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Payment_Term_Internal"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Pay_Group"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Commodity_Type"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Payment_Method"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Payment_Method_Internal"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Bank_Code"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Street_Address"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Street_Address_2"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Postal_Code"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="City" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="State_Region"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Country"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0"
+				name="Purchase_Order_Contact_Email" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Accounting_Contact_Email"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Type_of_Tax_ID"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Reason_for_Payment"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="ACH_Format_Code"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Remittance_Document_Type"
+				type="xsd:string">
+			</xsd:element>
+			
+			
+			<xsd:element maxOccurs="unbounded" minOccurs="0"
+				name="SupplierInformationAddress"
+				type="bons1:SupplierInformationAddress">
+			</xsd:element>
+			<xsd:element maxOccurs="unbounded" minOccurs="0"
+				name="SupplierInformationContact"
+				type="bons1:SupplierInformationContact">
+			</xsd:element>
+			<xsd:element maxOccurs="unbounded" minOccurs="0"
+				name="SupplierInformationArtifact"
+				type="bons1:SupplierInformationArtifact">
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

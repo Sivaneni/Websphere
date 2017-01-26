@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://CoupaLib/FromCoupa/SIM">
+	<xsd:complexType name="SupplierInformationContact">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" name="RecordType" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Supplier_Information_ID" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Contact_ID" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Contact_Type" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Prefix" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Suffix" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Additional_Name_Field" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="First_Name" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Last_Name" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Full_Name" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Email" type="xsd:string"/>
+			<xsd:element minOccurs="0" name="Work_Phone" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Mobile_Phone" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Fax_Phone" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Notes" type="xsd:string"/>
+			<xsd:element minOccurs="0" name="Created_Date_and_Time" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Created-By_id" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Created-By_Lastname_Firstname" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Created-By_email" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Updated_Date_and_Time" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Updated-By_id" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Updated-By_Lastname_Firstname" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Updated-By_email" type="xsd:string">
+			</xsd:element>
+
+
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

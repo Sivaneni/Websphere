@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" name="ChartOfAccountsBP" targetNamespace="http://P2I_ChartOfAccountsMod/COA/ChartOfAccountsBPInterface" xmlns:bons1="http://AwLib" xmlns:bons2="http://www.infor.com/boi_interface/AwPollChartofAccounts" xmlns:tns="http://P2I_ChartOfAccountsMod/COA/ChartOfAccountsBPInterface" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://P2I_ChartOfAccountsMod/COA/ChartOfAccountsBPInterface">
+            <xsd:import namespace="http://AwLib" schemaLocation="../ApplicationProperties.xsd"/>
+            <xsd:import namespace="http://www.infor.com/boi_interface/AwPollChartofAccounts" schemaLocation="../com/infor/www/boi_interface/AwPollChartofAccounts/com.boi.common.pollcoa.PollResultSetChartofAccounts.xsd"/>
+            <xsd:import namespace="http://AwLib" schemaLocation="../AwCompanyInfo.xsd"/>
+            <xsd:element name="processCOA">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="eventId" nillable="true" type="xsd:string"/>
+                        <xsd:element name="companyInfo" nillable="true" type="bons1:AwCompanyInfo"/>
+                        <xsd:element name="appProps" nillable="true" type="bons1:ApplicationProperties"/>
+                        <xsd:element name="PollResultSetChartofAccounts" nillable="true" type="bons2:com.boi.common.pollcoa.PollResultSetChartofAccounts"/>
+                        <xsd:element name="sourceSystem" nillable="true" type="xsd:string"/>
+                        <xsd:element name="targetSystem" nillable="true" type="xsd:string"/>
+                    </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="processCOARequest">
+    <wsdl:part element="tns:processCOA" name="processCOAParameters"/>
+  </wsdl:message>
+  <wsdl:portType name="ChartOfAccountsProcessIntf">
+    <wsdl:operation name="processCOA">
+            <wsdl:input message="tns:processCOARequest" name="processCOARequest"/>
+        </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

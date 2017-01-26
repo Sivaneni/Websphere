@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://CoupaLib/ToCoupa/Invoice">
+  <xsd:complexType name="InvoiceLineSplit">
+    <xsd:sequence>
+    	<xsd:element minOccurs="0" name="type" type="xsd:string"/>
+		<xsd:element minOccurs="0" name="invoice-id" type="xsd:string">
+		</xsd:element>
+		<xsd:element minOccurs="0" name="invoice-line-id" type="xsd:string">
+		</xsd:element>
+		<xsd:element minOccurs="0" name="line-num" type="xsd:string">
+		</xsd:element>
+		<xsd:element minOccurs="0" name="order-header-num" type="xsd:string">
+		</xsd:element>
+		<xsd:element minOccurs="0" name="order-line-id" type="xsd:string">
+		</xsd:element>
+		<xsd:element minOccurs="0" name="order-line-num" type="xsd:string">
+		</xsd:element>
+		<xsd:element minOccurs="0" name="account-allocation-id" type="xsd:string">
+		</xsd:element>
+		<xsd:element minOccurs="0" name="account-allocation-sequence" type="xsd:string">
+		</xsd:element>
+		<xsd:element minOccurs="0" name="account-allocation-amount" type="xsd:string">
+		</xsd:element>
+		<xsd:element minOccurs="0" name="account-allocation-percent" type="xsd:string">
+		</xsd:element>
+		<xsd:element minOccurs="0" name="account-code" type="xsd:string">
+		</xsd:element>
+		<xsd:element minOccurs="0" name="account-active" type="xsd:string">
+		</xsd:element>
+		<xsd:element minOccurs="0" name="segment-1" type="xsd:string">
+		</xsd:element>
+		<xsd:element minOccurs="0" name="segment-2" type="xsd:string">
+		</xsd:element>
+		<xsd:element minOccurs="0" name="segment-3" type="xsd:string">
+		</xsd:element>
+		<xsd:element minOccurs="0" name="segment-4" type="xsd:string">
+		</xsd:element>
+		<xsd:element minOccurs="0" name="segment-5" type="xsd:string">
+		</xsd:element>
+		<xsd:element minOccurs="0" name="segment-6" type="xsd:string">
+		</xsd:element>
+		<xsd:element minOccurs="0" name="segment-7" type="xsd:string">
+		</xsd:element>
+		<xsd:element minOccurs="0" name="segment-8" type="xsd:string">
+		</xsd:element>
+		<xsd:element minOccurs="0" name="segment-9" type="xsd:string">
+		</xsd:element>
+		<xsd:element minOccurs="0" name="segment-10" type="xsd:string">
+		</xsd:element>
+		<xsd:element minOccurs="0" name="segment-11" type="xsd:string">
+		</xsd:element>
+		<xsd:element minOccurs="0" name="segment-12" type="xsd:string">
+		</xsd:element>
+		<xsd:element minOccurs="0" name="segment-13" type="xsd:string">
+		</xsd:element>
+		<xsd:element minOccurs="0" name="segment-14" type="xsd:string">
+		</xsd:element>
+		<xsd:element minOccurs="0" name="segment-15" type="xsd:string">
+		</xsd:element>
+		<xsd:element minOccurs="0" name="segment-16" type="xsd:string">
+		</xsd:element>
+		<xsd:element minOccurs="0" name="segment-17" type="xsd:string">
+		</xsd:element>
+		<xsd:element minOccurs="0" name="segment-18" type="xsd:string">
+		</xsd:element>
+		<xsd:element minOccurs="0" name="segment-19" type="xsd:string">
+		</xsd:element>
+		<xsd:element minOccurs="0" name="segment-20" type="xsd:string">
+		</xsd:element>
+		<xsd:element minOccurs="0" name="account-name" type="xsd:string">
+		</xsd:element>
+		<xsd:element minOccurs="0" name="currency_code" type="xsd:string">
+		</xsd:element>
+		<xsd:element minOccurs="0" name="accounting-total" type="xsd:string">
+		</xsd:element>
+		<xsd:element minOccurs="0" name="accounting_currency" type="xsd:string">
+		</xsd:element>
+		<xsd:element minOccurs="0" name="custom-field-1" type="xsd:string">
+		</xsd:element>
+		<xsd:element minOccurs="0" name="custom-field-2" type="xsd:string">
+		</xsd:element>
+		<xsd:element minOccurs="0" name="custom-field-3" type="xsd:string">
+		</xsd:element>
+		<xsd:element minOccurs="0" name="custom-field-4" type="xsd:string">
+		</xsd:element>
+		<xsd:element minOccurs="0" name="custom-field-5" type="xsd:string">
+		</xsd:element>
+		<xsd:element minOccurs="0" name="custom-field-6" type="xsd:string">
+		</xsd:element>
+		<xsd:element minOccurs="0" name="custom-field-7" type="xsd:string">
+		</xsd:element>
+		<xsd:element minOccurs="0" name="custom-field-8" type="xsd:string">
+		</xsd:element>
+		<xsd:element minOccurs="0" name="custom-field-9" type="xsd:string">
+		</xsd:element>
+		<xsd:element minOccurs="0" name="custom-field-10" type="xsd:string">
+		</xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

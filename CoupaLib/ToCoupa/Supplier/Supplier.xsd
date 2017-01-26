@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://CoupaLib/ToCoupa/Supplier">
+	<xsd:complexType name="Supplier">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" name="Name" type="xsd:string"
+				default="Name*">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Display_Name"
+				type="xsd:string" default="Display Name">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Id" type="xsd:string"></xsd:element>
+			<xsd:element minOccurs="0" name="Status"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Commodity"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Supplier_Number"
+				type="xsd:string" default="Supplier Number">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Tax_ID" type="xsd:string"
+				default="Tax ID">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Primary_Address_Street1"
+				type="xsd:string" default="Primary Address Street1">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Primary_Address_Street2"
+				type="xsd:string" default="Primary Address Street2">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Primary_Address_City"
+				type="xsd:string" default="Primary Address City">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Primary_Address_State"
+				type="xsd:string" default="Primary Address State">
+			</xsd:element>
+			<xsd:element minOccurs="0"
+				name="Primary_Address_Postal_Code" type="xsd:string"
+				default="Primary Address Postal Code">
+			</xsd:element>
+			<xsd:element minOccurs="0"
+				name="Primary_Address_Country_Code" type="xsd:string"
+				default="Primary Address Country Code">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Invoice_Matching_Level"
+				type="xsd:string" default="Invoice Matching Level">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="PO_Email" type="xsd:string"
+				default="PO Email">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Payment_Terms"
+				type="xsd:string" default="Payment Terms">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="On_Hold" type="xsd:string"
+				default="On Hold">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Preferred_Currency"
+				type="xsd:string" default="Preferred Currency">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="International_Tax_ID"
+				type="xsd:string" default="International Tax ID">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="payment-method"
+				type="xsd:string" default="Payment Method">
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

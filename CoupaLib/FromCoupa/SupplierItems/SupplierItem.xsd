@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://CoupaLib/FromCoupa/SupplierItems">
+	<xsd:complexType name="SupplierItem">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" name="Type" type="xsd:string"></xsd:element>
+			<xsd:element minOccurs="0" name="Coupa_Item_ID"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Name" type="xsd:string"></xsd:element>
+			<xsd:element minOccurs="0" name="Description"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="UOM_Code"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Purchasable"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Item_Number"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Image_Url"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Commodity"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Tags" type="xsd:string"></xsd:element>
+			<xsd:element minOccurs="0" name="Require_Inspection_"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Require_Asset_Tag_"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Require_RFID_"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Supplier"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Preferred"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Contract_Number"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Price" type="xsd:string"></xsd:element>
+			<xsd:element minOccurs="0" name="Currency"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Supplier_Part_Num"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Lead_Time"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Manufacturer"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Savings_"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Created_At"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Updated_At"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Created_By_Email_"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0"
+				name="Created_By_Employee_Number_" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Created_By_Login_"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Updated_By_Email_"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0"
+				name="Updated_By_Employee_Number_" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Updated_By_Login_"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="UNSPC_Code"
+				type="xsd:string">
+			</xsd:element>
+
+			<xsd:element minOccurs="0" name="EAM_Catalog_Part"
+				type="xsd:string">
+			</xsd:element>
+
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://CoupaLib/ToCoupa/LookupValues">
+	<xsd:complexType name="COALookupValues">
+		<xsd:sequence>
+			<xsd:element default="Name*" minOccurs="0" name="Name" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Active" type="xsd:string">
+			</xsd:element>
+			<xsd:element default="Lookup*" minOccurs="0" name="Lookup" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Description" type="xsd:string">
+			</xsd:element>
+			<xsd:element default="External Ref Num" minOccurs="0" name="ExternalRefNum" type="xsd:string">
+			</xsd:element>
+			<xsd:element default="External Ref Code" minOccurs="0" name="ExternalRefCode" type="xsd:string">
+			</xsd:element>
+			<xsd:element default="Chart of Accounts" minOccurs="0" name="ChartOfAccounts" type="xsd:string">
+			</xsd:element>
+			<xsd:element default="Parent External Ref Code" minOccurs="0" name="ParentExternalRefCode" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Default" type="xsd:string">
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

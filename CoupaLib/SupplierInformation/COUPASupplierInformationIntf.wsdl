@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" name="COUPASupplierInformationIntf" targetNamespace="http://CoupaLib/COUPASupplierInformationIntf" xmlns:bons0="http://CoupaLib/COUPASupplierInformationIntf" xmlns:bons1="http://AwLib" xmlns:bons2="http://www.infor.com/boi_interface/AwPollCoupaBaanBP" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <wsdl:types>
+    <xsd:schema targetNamespace="http://CoupaLib/COUPASupplierInformationIntf" xmlns:tns="http://CoupaLib/COUPASupplierInformationIntf">
+      <xsd:import namespace="http://www.infor.com/boi_interface/AwPollCoupaBaanBP" schemaLocation="../com/infor/www/boi_interface/AwPollCoupaBaanBP/com.boi.common.pollcoa.PollResultSetCoupaBaanBP.xsd"/>
+      <xsd:import namespace="http://AwLib" schemaLocation="../ApplicationProperties.xsd"/>
+      <xsd:import namespace="http://AwLib" schemaLocation="../AwCompanyInfo.xsd"/>
+      <xsd:element name="processSupplierInformation">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="eventId" nillable="true" type="xsd:string"/>
+            <xsd:element name="companyInfo" nillable="true" type="bons1:AwCompanyInfo"/>
+            <xsd:element name="appProps" nillable="true" type="bons1:ApplicationProperties"/>
+            <xsd:element name="PollResultsSetCoupaBaanBP" nillable="true" type="bons2:com.boi.common.pollcoa.PollResultSetCoupaBaanBP"/>
+            <xsd:element name="sourceSystem" nillable="true" type="xsd:string"/>
+            <xsd:element name="targetSystem" nillable="true" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+    <wsdl:message name="processSupplierInformationRequestMsg">
+    <wsdl:part element="bons0:processSupplierInformation" name="processSupplierInformationParameters"/>
+  </wsdl:message>
+    <wsdl:portType name="COUPASupplierInformationIntf">
+    <wsdl:operation name="processSupplierInformation">
+      <wsdl:input message="bons0:processSupplierInformationRequestMsg" name="processSupplierInformationRequest"/>
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>
